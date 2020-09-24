@@ -14,6 +14,11 @@ namespace SalesWebMvc.Models
         [StringLength(60, MinimumLength = 2, ErrorMessage = "{0} size should be between {2} and {1}")]
         public string Name { get; set; }
 
+
+        [Required(ErrorMessage = "{0} required")]
+        [StringLength(60, MinimumLength = 2, ErrorMessage = "{0} size should be between {2} and {1}")]
+        public string LastName { get; set; }
+
         [Required(ErrorMessage = "{0} required")]
         [EmailAddress(ErrorMessage = "Enter a valid email")]
         [DataType(DataType.EmailAddress)]
