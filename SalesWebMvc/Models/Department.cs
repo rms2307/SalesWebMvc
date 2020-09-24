@@ -11,6 +11,7 @@ namespace SalesWebMvc.Models
 
         [Required(ErrorMessage = "{0} required")]
         public string Name { get; set; }
+        public string Description { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 
         public Department()
